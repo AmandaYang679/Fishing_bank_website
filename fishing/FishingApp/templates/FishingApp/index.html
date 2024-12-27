@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Т Банк">
+  <title>Т Банк</title>
+  <link rel="stylesheet" href="{% static '/css/styles.css' %}"> <!-- Подключение CSS файла -->
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">
+      <img src="{% static 'images/logo.png' alt='Логотип Т Банк' %}">
+    </div>
+    <nav class="nav">
+      <ul>
+        <li><a href="#">Главная</a></li>
+        <li><a href="#">Продукты</a></li>
+        <li><a href="#">Кредитные карты</a></li>
+        <li><a href="#">Услуги</a></li>
+        <li><a href="#">Поддержка</a></li>
+        <li><a href="#">Контакты</a></li>
+      </ul>
+    </nav>
+    <div class="login">
+      <a href="authorization">Войти</a>
+    </div>
+  </header>
+
+  <!-- Main content section -->
+  <main>
+    <section class="hero">
+      <div class="hero-text">
+        <h1>Получите карту Т Банк с уникальными условиями!</h1>
+        <p>Преимущества Т Банк - кредитные карты, вклады, кредиты и много другого.</p>
+        <button class="cta-button">Оформить карту</button>
+      </div>
+    </section>
+
+    <!-- Products section -->
+    <section class="products">
+      <div class="product-card">
+        <img src="card1.png" alt="Кредитная карта">
+        <h3>Кредитная карта</h3>
+        <p>Особые условия для новых клиентов.</p>
+      </div>
+      <div class="product-card">
+        <img src="card2.png" alt="Дебетовая карта">
+        <h3>Дебетовая карта</h3>
+        <p>Пользуйтесь картой без комиссии.</p>
+      </div>
+      <div class="product-card">
+        <img src="card3.png" alt="Вклады">
+        <h3>Вклады</h3>
+        <p>Выбирайте вклад с лучшими ставками.</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-links">
+      <ul>
+        <li><a href="#">Политика конфиденциальности</a></li>
+        <li><a href="#">Условия использования</a></li>
+        <li><a href="#">Карта сайта</a></li>
+      </ul>
+    </div>
+    <p>© 2024 Т Банк. Все права защищены.</p>
+  </footer>
+
+</body>
+</html>

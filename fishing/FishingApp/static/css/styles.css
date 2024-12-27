@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+header {
+  background-color: #1a1a1a;
+  padding: 20px 0;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo img {
+  width: 150px;
+}
+
+header .nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+header .nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Стили для кнопки "Войти" */
+.login a {
+  display: inline-block;
+  padding: 12px 24px; /* Увеличиваем размер кнопки */
+  background-color: #ffcc00; /* Яркий цвет фона */
+  color: #000; /* Цвет текста */
+  font-size: 18px; /* Увеличиваем размер шрифта */
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 8px; /* Скругленные углы */
+  border: 3px solid #ffcc00; /* Рамка того же цвета */
+  transition: all 0.3s ease; /* Плавное изменение при наведении */
+}
+
+.login a:hover {
+  background-color: #e6b800; /* Тёмно-жёлтый цвет при наведении */
+  border-color: #e6b800; /* Меняем цвет рамки при наведении */
+  color: #fff; /* Белый текст при наведении */
+  transform: scale(1.1); /* Увеличиваем кнопку при наведении */
+}
+
+.hero {
+  background-color: #ffdb58;
+  padding: 60px 20px;
+  text-align: center;
+  color: white;
+}
+
+.hero h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.cta-button {
+  background-color: #1a1a1a;
+  color: white;
+  border: none;
+  padding: 15px 40px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.cta-button:hover {
+  background-color: #333;
+}
+
+.products {
+  display: flex;
+  justify-content: space-around;
+  margin: 40px 0;
+}
+
+.product-card {
+  background-color: white;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 200px;
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+}
+
+.product-card h3 {
+  font-size: 22px;
+  margin-top: 10px;
+}
+
+.product-card p {
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+footer .footer-links ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+footer .footer-links a {
+  color: white;
+  text-decoration: none;
+}
+
+footer .footer-links a:hover {
+  text-decoration: underline;
+}

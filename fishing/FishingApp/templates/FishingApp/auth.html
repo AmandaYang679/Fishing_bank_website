@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Авторизация | Т Банк</title>
+  <style>
+    /* Основные стили для страницы */
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #fcfcfc, #e8e8e8);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    /* Контейнер окна авторизации */
+    .auth-container {
+      background-color: #ffffff;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      width: 350px;
+      text-align: center;
+    }
+
+    .auth-container h2 {
+      font-size: 24px;
+      margin-bottom: 20px;
+      color: #222222;
+    }
+
+    .auth-container p {
+      color: #888888;
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+
+    /* Поля ввода */
+    .input-field {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+      box-sizing: border-box;
+    }
+
+    .input-field:focus {
+      border-color: #0077ff;
+      outline: none;
+    }
+
+    /* Кнопка авторизации */
+    .auth-button {
+      background-color: #0077ff;
+      color: #ffffff;
+      border: none;
+      padding: 12px;
+      width: 100%;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .auth-button:hover {
+      background-color: #005bb5;
+    }
+
+    /* Ссылки */
+    .auth-links {
+      margin-top: 15px;
+    }
+
+    .auth-links a {
+      color: #0077ff;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .auth-links a:hover {
+      text-decoration: underline;
+    }
+
+    /* Логотип */
+    .logo {
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="auth-container">
+    <div class="logo">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/9/9d/Tinkoff_Bank_logo_2019.svg" alt="Т Банк" width="120">
+    </div>
+    <h2>Войти в личный кабинет</h2>
+    <p>Введите логин и пароль для доступа к личному кабинету</p>
+
+    <!-- Форма авторизации с методом POST -->
+    <form action="/login" method="POST">
+      {% csrf_token %}
+      <input type="text" class="input-field" name="login" placeholder="Логин" required>
+      <input type="password" class="input-field" name="password" placeholder="Пароль" required>
+      <button type="submit" class="auth-button">Войти</button>
+    </form>
+  </div>
+</body>
+</html>
